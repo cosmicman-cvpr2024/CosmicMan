@@ -1,5 +1,5 @@
 # CosmicMan: A Text-to-Image Foundation Model for Humans
-<img src="./assets/teaser_1118_2 2.pdf" width="96%" height="96%">
+<img src="./assets/1.png" width="96%" height="96%">
 
 [Shikai Li](mailto:lishikai@pjlab.org.cn), [Jianglin Fu](https://github.com/arleneF), [Kaiyuan Liu](), [Wentao Wang](), [Kwan-Yee Lin](https://kwanyeelin.github.io/), [Wayne Wu](https://wywu.github.io/) <br>
 **[[Video Demo]](https://www.youtube.com/watch?v=fk2fniU6oyM)** | **[[Project Page]](https://cosmicman-cvpr2024.github.io/)** | **[[Paper]]()**
