@@ -9,8 +9,8 @@ At the heart of CosmicMan's success are the new reflections and perspectives on 
 
 ## Updates
 <!-- - [01/01/2024] Pretrained model and inference scripts are released. -->
-- [26/09/2023] :fire::fire::fire:[Technical report](https://arxiv.org/abs/2404.01294) has been released!
-- [01/04/2023] CosmicMan has been accepted by CVPR2024!
+- [02/04/2023] :fire::fire::fire:[Technical report](https://arxiv.org/abs/2404.01294) has been released!
+- [01/03/2023] CosmicMan has been accepted by CVPR2024!
 
 
 ## TODOs
