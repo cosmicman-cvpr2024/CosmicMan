@@ -8,16 +8,17 @@
 At the heart of CosmicMan's success are the new reflections and perspectives on data and model: (1) We found that data quality and a scalable data production flow are essential for the final results from trained models. Hence, we propose a new data production paradigm, **Annotate Anyone**, which serves as a perpetual data flywheel to produce high-quality data with accurate yet cost-effective annotations over time. Based on this, we constructed a large-scale dataset **CosmicMan-HQ 1.0**, with 6 Million high-quality real-world human images in a mean resolution of 1488x1255, and attached with precise text annotations deriving from 115 Million attributes in diverse granularities. (2) We argue that a text-to-image foundation model specialized for humans must be pragmatic - easy to integrate into down-streaming tasks while effective in producing high-quality human images. Hence, we propose to model the relationship between dense text descriptions and image pixels in a decomposed manner, and present **D**ecomposed-**A**ttention-**R**efocus**ing** (**Daring**) training framework. It seamlessly decomposes the cross-attention features in existing text-to-image diffusion model, and enforces attention refocusing without adding extra modules. Through Daring, we show that explicitly discretizing continuous text space into several basic groups that align with human body structure is the key to tackling the misalignment problem in a breeze. <br>
 
 ## Updates
-<!-- - [01/01/2024] Pretrained model and inference scripts are released.
-- [26/09/2023] Our paper is released on arXiv. -->
-- [01/04/2023] Our work has been accepted by CVPR2024!
+<!-- - [01/01/2024] Pretrained model and inference scripts are released. -->
+- [26/09/2023] :fire::fire::fire:Technique reported has been released! [paper](https://arxiv.org/abs/2404.01294)
+- [01/04/2023] CosmicMan has been accepted by CVPR2024!
 
 
 ## TODOs
-- [ ] Release technical report.
+- [x] Release technical report.
 - [ ] Release Inference code.
 - [ ] Release pretrained models.
 - [ ] Release training code.
+- [ ] Release data.
 
 <!-- 
 ## Usage
