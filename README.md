@@ -9,7 +9,7 @@ At the heart of CosmicMan's success are the new reflections and perspectives on 
 
 ## Updates
 <!-- - [01/01/2024] Pretrained model and inference scripts are released. -->
-- [05/04/2024] :fire::fire::fire:CosmicMan is selected as Highlight Paper (324 out of 11,532 submissions) at CVPR 2024!
+- [05/04/2024] :fire::fire::fire:CosmicMan is selected as **Highlight Paper** (324 out of 11,532 submissions) at CVPR 2024!
 - [02/04/2024] [Technical report](https://arxiv.org/abs/2404.01294) has been released.
 - [01/03/2024] CosmicMan has been accepted by CVPR2024.
 
