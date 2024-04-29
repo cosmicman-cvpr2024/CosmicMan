@@ -9,6 +9,7 @@ At the heart of CosmicMan's success are the new reflections and perspectives on 
 
 ## Updates
 <!-- - [01/01/2024] Pretrained model and inference scripts are released. -->
+- [29/04/2024] [CosmicManHQ-1.0 Dataset](https://huggingface.co/datasets/cosmicman/CosmicManHQ-1.0) is released!
 - [05/04/2024] :fire::fire::fire:CosmicMan is selected as **Highlight Paper** (324 out of 11,532 submissions) at CVPR 2024!
 - [02/04/2024] [Technical report](https://arxiv.org/abs/2404.01294) has been released.
 - [01/03/2024] CosmicMan has been accepted by CVPR2024.
@@ -19,7 +20,7 @@ At the heart of CosmicMan's success are the new reflections and perspectives on 
 - [ ] Release Inference code.
 - [ ] Release pretrained models.
 - [ ] Release training code.
-- [ ] Release data.
+- [x] Release data.
 
 ## Related Work
 * (ECCV 2022) **StyleGAN-Human: A Data-Centric Odyssey of Human Generation**, Jianglin Fu et al. [[Paper](https://arxiv.org/pdf/2204.11823.pdf)], [[Project Page](https://stylegan-human.github.io/)], [[Dataset](https://github.com/stylegan-human/StyleGAN-Human)]
