@@ -17,10 +17,11 @@ At the heart of CosmicMan's success are the new reflections and perspectives on 
 
 ## TODOs
 - [x] Release technical report.
+- [x] Release data.
 - [ ] Release Inference code.
 - [ ] Release pretrained models.
 - [ ] Release training code.
-- [x] Release data.
+
 
 ## Related Work
 * (ECCV 2022) **StyleGAN-Human: A Data-Centric Odyssey of Human Generation**, Jianglin Fu et al. [[Paper](https://arxiv.org/pdf/2204.11823.pdf)], [[Project Page](https://stylegan-human.github.io/)], [[Dataset](https://github.com/stylegan-human/StyleGAN-Human)]
