@@ -25,6 +25,7 @@ At the heart of CosmicMan's success are the new reflections and perspectives on 
 
 ## Related Work
 * (ECCV 2022) **StyleGAN-Human: A Data-Centric Odyssey of Human Generation**, Jianglin Fu et al. [[Paper](https://arxiv.org/pdf/2204.11823.pdf)], [[Project Page](https://stylegan-human.github.io/)], [[Dataset](https://github.com/stylegan-human/StyleGAN-Human)]
+* (ICCV 2023) **UnitedHuman: Harnessing Multi-Source Data for High-Resolution Human Generation**, Jianglin Fu et al. [[Paper](https://arxiv.org/abs/2309.14335)], [[Project Page](https://unitedhuman.github.io/)]
 
 ## Citation
 
