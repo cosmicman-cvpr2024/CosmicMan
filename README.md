@@ -35,7 +35,6 @@ pip install -e ./diffusers
 To get started, first install the required dependencies, then run:
 
 ```
-cd ./scripts
 # CosmicMan-SDXL 
 python demo_sdxl.py
 ```
@@ -99,7 +98,6 @@ image = pipe(positive_prompt, num_inference_steps=30,
 We also provide the inference scripts in this repository for CosmicMan-SDXL and CosmicMan-SD:
 
 ```
-cd ./scripts
 # CosmicMan-SDXL 
 python infer_sdxl.py --H 1024 --W 1024 --outdir ./Output_sdxl  --steps 30 --use_refiner \
     --prompts "A fit Caucasian elderly woman, her wavy white hair above shoulders, wears a pink floral cotton long-sleeve shirt and a cotton hat against a natural landscape in an upper body shot"\
