@@ -110,8 +110,7 @@ python infer_sd.py --H 1024 --W 1024  --outdir ./Output_sd  --steps 30 \
 ```
 
 ### Training
-Put [CosmicManHQ-1.0](https://huggingface.co/datasets/cosmicman/CosmicManHQ-1.0) in `data` folder and modify the training scripts in `train_sdxl.sh`. 
-Download the CosmicManHQ-1.0 dataset from [Hugging face](https://huggingface.co/datasets/cosmicman/CosmicManHQ-1.0) and place it in the data directory. Then update the training script found in `train_sdxl.sh` and train! 
+Download the CosmicManHQ-1.0 dataset from [Hugging face](https://huggingface.co/datasets/cosmicman/CosmicManHQ-1.0) and place it in the `data` directory. Then update the training script found in `train_sdxl.sh` and train! 
 ```
 srun -p PARTITION --gres=gpu:1 --ntasks-per-node=1 --cpus-per-task=8 sh train_sdxl.sh
 ```
