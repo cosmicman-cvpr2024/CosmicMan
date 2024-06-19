@@ -150,7 +150,7 @@ def generate_image(prompt,
         image_list.append((image,f"Seed {seed}"))
     return image_list
 
-with gr.Blocks(theme=gr.themes.Soft(),css="style.css") as demo:
+with gr.Blocks(theme=gr.themes.Soft(),css=".gradio-container{width:680px!important}") as demo:
     gr.Markdown(DESCRIPTION)
     with gr.Group():
         with gr.Row():

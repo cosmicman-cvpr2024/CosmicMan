@@ -8,6 +8,7 @@
 At the heart of CosmicMan's success are the new reflections and perspectives on data and model: (1) We found that data quality and a scalable data production flow are essential for the final results from trained models. Hence, we propose a new data production paradigm, **Annotate Anyone**, which serves as a perpetual data flywheel to produce high-quality data with accurate yet cost-effective annotations over time. Based on this, we constructed a large-scale dataset **CosmicMan-HQ 1.0**, with 6 Million high-quality real-world human images in a mean resolution of 1488x1255, and attached with precise text annotations deriving from 115 Million attributes in diverse granularities. (2) We argue that a text-to-image foundation model specialized for humans must be pragmatic - easy to integrate into down-streaming tasks while effective in producing high-quality human images. Hence, we propose to model the relationship between dense text descriptions and image pixels in a decomposed manner, and present **D**ecomposed-**A**ttention-**R**efocus**ing** (**Daring**) training framework. It seamlessly decomposes the cross-attention features in existing text-to-image diffusion model, and enforces attention refocusing without adding extra modules. Through Daring, we show that explicitly discretizing continuous text space into several basic groups that align with human body structure is the key to tackling the misalignment problem in a breeze. <br>
 
 ## Updates
+- [18/06/2024] Training code is released!
 - [14/06/2024] Pretrained models [CosmicMan-SDXL](https://huggingface.co/cosmicman/CosmicMan-SDXL), [CosmicMan-SD](https://huggingface.co/cosmicman/CosmicMan-SD) and inference scripts are released. [Online Huggingface Gradio Demo](https://huggingface.co/spaces/cosmicman/CosmicMan-SDXL) is also released.
 - [29/04/2024] [CosmicManHQ-1.0 Dataset](https://huggingface.co/datasets/cosmicman/CosmicManHQ-1.0) is released!
 - [05/04/2024] :fire::fire::fire:CosmicMan is selected as **Highlight Paper** (324 out of 11,532 submissions) at CVPR 2024!
@@ -25,7 +26,8 @@ Our CosmicMan-SD is based on [runwayml/stable-diffusion-v1-5](https://huggingfac
 conda create -n cosmicman python=3.10
 source activate cosmicman
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install accelerate diffusers datasets transformers botocore invisible-watermark bitsandbytes gradio==3.48.0
+pip install accelerate datasets transformers  invisible-watermark bitsandbytes deepspeed gradio==3.48.0
+pip install -e ./diffusers
 ```
 
 ### Quick start with [Gradio](https://www.gradio.app/guides/quickstart)
@@ -107,13 +109,20 @@ python infer_sd.py --H 1024 --W 1024  --outdir ./Output_sd  --steps 30 \
     --prompts "A closeup portrait shot against a white wall, a fit Caucasian adult female with wavy blonde hair falling above her chest wears a short sleeve silk floral dress and a floral silk normal short sleeve white blouse" \
 ```
 
+### Training
+Put [CosmicManHQ-1.0](https://huggingface.co/datasets/cosmicman/CosmicManHQ-1.0) in `data` folder and modify the training scripts in `train_sdxl.sh`. 
+Download the CosmicManHQ-1.0 dataset from [Hugging face](https://huggingface.co/datasets/cosmicman/CosmicManHQ-1.0) and place it in the data directory. Then update the training script found in `train_sdxl.sh` and train! 
+```
+srun -p PARTITION --gres=gpu:1 --ntasks-per-node=1 --cpus-per-task=8 sh train_sdxl.sh
+```
+
 
 ## TODOs
 - [x] Release technical report.
 - [x] Release data.
 - [x] Release Inference code.
 - [x] Release pretrained models.
-- [ ] Release training code.
+- [x] Release training code.
 
 
 ## Related Work
