@@ -24,7 +24,7 @@ accelerate launch --main_process_port 27255  --num_processes 1 --config_file  ./
     --max_grad_norm=1 \
     --lr_scheduler="constant" --lr_warmup_steps=0 --learning_rate=1e-5 \
     --bucket_side_min=768 \
-    --bucket_side_min=1536 \
+    --bucket_side_max=1536 \
     --enable_xformers_memory_efficient_attention \
     --gradient_checkpointing \
     --noise_offset=0.05 \
