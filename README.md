@@ -45,7 +45,7 @@ Let's have a look at a simple example using the `http://your-server-ip:port`.
 
 You can directly use our model with Diffusers for CosmicMan-SDXL and CosmicMan-SD:
 
-```
+```python
 # CosmicMan-SDXL 
 import torch
 from diffusers import StableDiffusionXLPipeline, StableDiffusionXLImg2ImgPipeline, UNet2DConditionModel, EulerDiscreteScheduler
@@ -72,7 +72,7 @@ image = pipe(positive_prompt, num_inference_steps=30,
 image = refiner(positive_prompt, negative_prompt=negative_prompt, image=image[None, :]).images[0].save("output.png")
 ```
 
-```
+```python
 # CosmicMan-SD
 import torch
 from diffusers import StableDiffusionPipeline, UNet2DConditionModel, EulerDiscreteScheduler
@@ -97,7 +97,7 @@ image = pipe(positive_prompt, num_inference_steps=30,
 
 We also provide the inference scripts in this repository for CosmicMan-SDXL and CosmicMan-SD:
 
-```
+```bash
 # CosmicMan-SDXL 
 python infer_sdxl.py --H 1024 --W 1024 --outdir ./Output_sdxl  --steps 30 --use_refiner \
     --prompts "A fit Caucasian elderly woman, her wavy white hair above shoulders, wears a pink floral cotton long-sleeve shirt and a cotton hat against a natural landscape in an upper body shot"\
@@ -109,7 +109,7 @@ python infer_sd.py --H 1024 --W 1024  --outdir ./Output_sd  --steps 30 \
 
 ### Training
 Download the CosmicManHQ-1.0 dataset from [Hugging face](https://huggingface.co/datasets/cosmicman/CosmicManHQ-1.0) and place it in the `data` directory. Then update the training script found in `train_sdxl.sh` and train! 
-```
+```bash
 srun -p PARTITION --gres=gpu:1 --ntasks-per-node=1 --cpus-per-task=8 sh train_sdxl.sh
 ```
 
